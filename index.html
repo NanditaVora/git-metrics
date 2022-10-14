@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Metrics</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Git Metrics for 'myrepos.stackroute.niit.com'</h1>
+    </header>
+    <article id="dashboard">
+        <section id="user-input">
+            <label for="group-name-input" id="group-name-label">  Group Name </label>
+            <input type="text" id="group-name-input" required placeholder="Enter Group Name">
+        </section>
+        <section id="side-bar">
+            <button id="btn-member-data" onclick="fetchMembers()">Members in Group</button>
+            <button id="btn-subGroup-data" onclick="fetchSubgroups()">Sub Groups in Group</button>
+        </section>
+        <section id="dashboard-data">
+            <div id="member-data">
+                <h3 id="total-members"></h3>
+                <ul id="member-list">
+
+                </ul>
+            </div>
+            <div id="subGroup-data">
+                <h3 id="total-subGroups"></h3>
+                <ul id="subGroup-list">
+
+                </ul>
+            </div>
+        </section>
+    </article>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.2/axios.min.js"></script>
+    <script src="./fetch-member-details/index.js"></script>
+</body>
+</html>

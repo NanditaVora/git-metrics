@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: cadetblue;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+#dashboard {
+    height: 100%;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#side-bar {
+    width: 20vw;
+    color: aquamarine;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#side-bar > button {
+    margin: 10px ;
+}
+
+#member-data, #subgroup-data {
+    display: none;
+}
+
+#user-input {
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+}
+
+#group-name-input {
+    width: 30%;
+}
+
+#group-name-label {
+    color: whitesmoke;
+}

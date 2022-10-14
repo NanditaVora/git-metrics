@@ -81,7 +81,7 @@ function fetchSubgroups() {
                             const groups = responseData.filter(group => group.full_path.startsWith(userInput) && group.full_path !== userInput);
                             if (groups.length > 0) {
                                 document.getElementById("total-subGroups").innerHTML = `Total Sub Groups in the <u>${userInput}</u> group are <u>${groups.length}</u>`;
-                                document.getElementById("subGroup-list").innerHTML = groups.map(subGroup => `<li>${subGroup.full_path}</li>`).join("");
+                                document.getElementById("subGroup-list").innerHTML = groups.map(subGroup => `<li>${subGroup.full_path}</li>`).sort().join("");
 
                             }
                             else {
